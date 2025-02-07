@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InTeaReable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="canvas-container">
+        <canvas id="dot-canvas"></canvas>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-terminal fs-3 text-white me-2"></i>
+                <span class="text-gradient logo-text" style="padding-left: 5px;">InTeaReable</span>
+            </a>
+
+            <button class="navbar-toggler glass-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list text-white fs-4"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active-glass" href="#about">Главная</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#footer">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4 fade-in unselectable" style="margin-top: 150px;">Творчество через код</h1>
+            <p class="lead mb-4 fade-in unselectable" style="animation-delay: 0.2s">Сеньор разработчик & Модератор NETZONA</p>
+            <div class="mt-4"> 
+                <a href="https://netzona.org/members/inteareable.9551/" class="btn btn-custom fade-in">
+                    <i class="bi bi-layout-text-window-reverse me-1"></i>
+                    NetZona
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section unselectable fade-in">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Обо мне</h2>
+                    <p class="lead" style="text-align: justify;">Я — энтузиаст моддинга Source Engine, программист и UI/UX дизайнер, стремящийся создавать уникальные и увлекательные пользовательские интерфейсы. Моя страсть к технологиям и играм вдохновляет меня на постоянное развитие и эксперименты в области программирования и дизайна.</p>
+                    <div class="mt-4"> 
+                        <a href="https://t.me/inteareable" class="btn btn-custom">
+                            <i class="bi bi-telegram me-1"></i>
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="img/bootup.png" alt="Профиль" class="img-fluid rounded-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 fade-in" id="projects">
+        <div class="container unselectable">
+            <h2 class="text-center mb-5 fade-in ">
+                <i class="bi bi-stack me-3 "></i>Последние проекты
+            </h2>
+            <div class="row g-4 ">
+                <div class="col-md-4 ">
+                    <div class="glass-card ">
+                        <img src="img/scr1.png " alt="KennieBot " class="glass-image " />
+                        <div class="card-body " style="padding-left: 10px; padding-top: 10px; ">
+                            <div class="mb-3">
+                                <span class="badge bg-purple">Python</span>
+                                <span class="badge bg-dark">AioGram</span>
+                                <span class="badge bg-dark">SQLite3</span>
+                            </div>
+                            <h5><i class="bi bi-globe me-2 "></i>KennieBot</h5>
+                            <p>Телеграм бот реализованный через библиотеку aiogram, имеет лучшую базу для реализации своих функций.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="glass-card ">
+                        <img src="img/scr2.png " alt="Path To Rebirth " class="glass-image " />
+                        <div class="card-body " style="padding-left: 10px; padding-top: 10px; ">
+                            <div class="mb-3">
+                                <span class="badge bg-purple">Lua</span>
+                                <span class="badge bg-dark">Helix</span>
+                                <span class="badge bg-dark">HTML</span>
+                            </div>
+                            <h5><i class="bi bi-phone me-2 "></i>Path To Rebirth</h5>
+                            <p>Half Life 2 проект в Garry's Mod, реализованый через FrameWork Helix. На сегодняшний момент закрыт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="glass-card ">
+                        <img src="img/scr3.png " alt="LeynBot " class="glass-image " />
+                        <div class="card-body " style="padding-left: 10px; padding-top: 10px; ">
+                            <div class="mb-3">
+                                <span class="badge bg-purple">Python</span>
+                                <span class="badge bg-dark">NextCord</span>
+                                <span class="badge bg-dark">SQLite3</span>
+                            </div>
+                            <h5><i class="bi bi-laptop me-2 "></i>LeynBot</h5>
+                            <p>Ультимативный бот, с огромным количеством функций, построенный на Python и принципах ООП.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modding-section py-5 bg-dark-2 fade-in">
+        <div class="container ">
+            <div class="row g-5 align-items-center ">
+                <div class="col-lg-6 ">
+                    <div class="video-card ">
+                        <video class="video-preview " poster="video-preview.jpg " autoplay muted loop playsinline>
+                            <source src="img/logo.webm " type="video/webm ">
+                        </video>
+                        <div class="video-overlay ">
+                            <div class="tooltip-item " style="top: 30%; left: 20% ">
+                                <div class="tooltip-badge ">Optimization</div>
+                            </div>
+                            <div class="tooltip-item " style="top: 60%; left: 70% ">
+                                <div class="tooltip-badge ">Creating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 unselectable">
+                    <div class="modding-content ">
+                        <h2 class="section-title mb-4 ">
+                            <i class="engine-icon "></i>
+                            Опыт в Source Engine
+                        </h2>
+
+                        <div class="skill-card mb-4">
+                            <div class="skill-header">
+                                <img src="img/doggo_sleep.gif" alt="Собачка спит" class="doggo-gif fade-in">
+                                <i class="bi bi-map"></i>
+                                <h3>Левел-Дизайн</h3>
+                                <span class="skill-rating">4.8/5</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-item">
+                                    <span>Hammer++</span>
+                                    <div class="progress-bar" data-width="95%"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>BSP Optimization</span>
+                                    <div class="progress-bar" data-width="90%"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Lightmapping</span>
+                                    <div class="progress-bar" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card mb-4 ">
+                            <div class="skill-header ">
+                                <i class="bi bi-controller "></i>
+                                <h3>Гейм-Дизайн</h3>
+                                <span class="skill-rating ">4.5/5</span>
+                            </div>
+                            <div class="skill-metrics ">
+                                <div class="metric-item ">
+                                    <div class="metric-value ">92%</div>
+                                    <div class="metric-label ">Баланс механик</div>
+                                    <div class="metric-details ">TTK 2.3s ±0.5</div>
+                                </div>
+                                <div class="metric-item ">
+                                    <div class="metric-value ">87%</div>
+                                    <div class="metric-label ">UX/UI</div>
+                                    <div class="metric-details ">2.1s avg. response</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card ">
+                            <div class="skill-header ">
+                                <i class="bi bi-server "></i>
+                                <h3>GMod разработка серверов</h3>
+                                <span class="skill-rating ">4.7/5</span>
+                            </div>
+                            <div class="skill-chips ">
+                                <div class="chip ">
+                                    <span class="chip-icon ">LUA</span>
+                                    DarkRP/Helix
+                                </div>
+                                <div class="chip ">
+                                    <span class="chip-icon ">SQL</span>
+                                    MySQL Optimization
+                                </div>
+                                <div class="chip ">
+                                    <span class="chip-icon ">HTML</span>
+                                    HTML Loading
+                                </div>
+                                <div class="chip ">
+                                    <span class="chip-icon ">MathLib</span>
+                                    Interface Implementation
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container my-5 fade-in">
+        <img src="img/doggo_eat.gif" alt="Собачка ест" class="doggo-gif2">
+        <div class="donation-container">
+            <div class="donation-header text-center unselectable">
+                <h2 class="text-white mb-0"><i class="bi bi-gift-fill me-2"></i>Поддержать автора</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="col-md-7 p-4">
+                    <div class="row g-4" id="cryptoRates">
+                        <div class="col-12 text-center text-purple-light">
+                            <div class="spinner-border" role="status"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 bg-purple-dark p-4 unselectable">
+                    <h4 class="text-white mb-4"><i class="bi bi-info-circle me-2"></i>На что пойдут средства:</h4>
+                    <ul class="list-unstyled">
+                        <li class="text-white-50 mb-3">
+                            <i class="bi bi-cup-hot fs-5 me-2"></i>
+                            Крафтовое пиво (0.5 л)
+                        </li>
+                        <li class="text-white-50 mb-3">
+                            <i class="bi bi-fire fs-5 me-2"></i>
+                            Крепкие сигареты
+                        </li>
+                        <li class="text-white-50 mb-3">
+                            <i class="bi bi-cpu fs-5 me-2"></i>
+                            Обслуживание серверов
+                        </li>
+                        <li class="text-white-50">
+                            <i class="bi bi-heart-fill fs-5 me-2 text-danger"></i>
+                            Мотивация автору
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    async function fetchRates() {
+        try {
+            const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,tether,the-open-network&vs_currencies=rub');
+            const data = await response.json();
+            
+            const rates = {
+                BTC: data.bitcoin.rub,
+                USDT: data.tether.rub,
+                TON: data['the-open-network'].rub
+            };
+
+            updateRates(rates);
+        } catch (error) {
+            document.getElementById('cryptoRates').innerHTML = `
+                <div class="col-12 text-center text-danger">
+                    Ошибка загрузки данных
+                </div>`;
+        }
+    }
+
+    function updateRates(rates) {
+        const baseAmount = 100;
+        const cryptoRates = document.getElementById('cryptoRates');
+
+        cryptoRates.innerHTML = `
+            <!-- Bitcoin -->
+            <div class="col-12 donation-item p-3">
+                <div class="d-flex align-items-center">
+                    <button class="copy-btn rounded-circle me-3" 
+                            data-address="1DwnEP88QryicuTkatuARtmpWGqvDq1cTz">
+                        <i class="bi bi-currency-bitcoin text-white"></i>
+                    </button>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-white mb-0">Bitcoin</h5>
+                            <span class="badge badge-purple">${(baseAmount / rates.BTC).toFixed(6)} BTC</span>
+                        </div>
+                        <code class="d-block mt-1 text-white-50">1DwnEP88QryicuTkatuARtmpWGqvDq1cTz</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TON -->
+            <div class="col-12 donation-item p-3">
+                <div class="d-flex align-items-center">
+                    <button class="copy-btn rounded-circle me-3" 
+                            data-address="UQCdUUBIFFAtjRbrzJ1r4BH-BjlQHwilPjXmgoEFCiYdM22S">
+                        <i class="bi bi-lightning-charge-fill text-white"></i>
+                    </button>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-white mb-0">TON</h5>
+                            <span class="badge badge-purple">${(baseAmount / rates.TON).toFixed(6)} TON</span>
+                        </div>
+                        <code class="d-block mt-1 text-white-50">UQCdUUBIFFAtjRbrzJ1r4BH-BjlQHwilPjXmgoEFCiYdM22S</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USDT -->
+            <div class="col-12 donation-item p-3">
+                <div class="d-flex align-items-center">
+                    <button class="copy-btn rounded-circle me-3" 
+                            data-address="TMoLK8253GmdJtFURaGUb2ogRhUeMANeBn">
+                        <i class="bi bi-currency-dollar text-white"></i>
+                    </button>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-white mb-0">USDT</h5>
+                            <span class="badge badge-purple">${(baseAmount / rates.USDT).toFixed(6)} USDT</span>
+                        </div>
+                        <code class="d-block mt-1 text-white-50">TMoLK8253GmdJtFURaGUb2ogRhUeMANeBn</code>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        initCopyButtons();
+    }
+
+    function initCopyButtons() {
+        const notification = document.getElementById('copyNotification');
+        
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const address = this.dataset.address;
+                navigator.clipboard.writeText(address);
+                
+                notification.classList.add('visible');
+                
+                setTimeout(() => {
+                    notification.classList.remove('visible');
+                }, 2000);
+            });
+        });
+    }
+
+
+
+    fetchRates();
+    </script>
+
+
+    <div class="copy-notification" id="copyNotification">
+        <img src="img/doggo.gif" alt="Прост собачка" class="doggo-event">
+        Скопировано в буфер!
+    </div>
+
+
+    <footer class="glass-footer pt-5 ">
+        <div class="container " id="footer">
+            <div class="row g-4 ">
+                <!-- Колонка 1 -->
+                <div class="col-md-4 mb-4 ">
+                    <h3 class="text-gradient mb-3 ">InTeaReable</h3>
+                    <p class=" ">Создаем цифровые решения будущего</p>
+                    <div class="social-links ">
+                        <a href="https://github.com/executable-rat" class="btn btn-icon btn-purple "><i class="bi bi-github"></i></a>
+                        <a href="https://t.me/inteareable" class="btn btn-icon btn-purple "><i class="bi bi-telegram"></i></a>
+                        <a href="https://soundcloud.com/inteareable" class="btn btn-icon btn-purple "><i class="bi-music-note-list"></i></a>
+                        <a href="https://discordapp.com/users/1184922155348131870" class="btn btn-icon btn-purple "><i class="bi bi-discord"></i></a>
+                        <a href="https://steamcommunity.com/id/InTeaReable/" class="btn btn-icon btn-purple "><i class="bi bi-steam"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 ">
+                    <h5 class="text-white mb-3 ">Быстрые ссылки</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="https://t.me/netzona_forum " class="footer-link ">Telegram NZ</a></li>
+                        <li><a href="https://discord.com/invite/EMM47Cge8A " class="footer-link ">Discord NZ</a></li>
+                        <li><a href="https://netzona.org/ " class="footer-link ">Forum NZ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4 ">
+                    <h5 class="text-white mb-3 ">Контакты</h5>
+                    <ul class="list-unstyled ">
+                        <li class="mb-2 ">
+                            <i class="bi bi-geo-alt me-2 "></i>Томск, Россия
+                        </li>
+                        <li class="mb-2 ">
+                            <i class="bi bi-envelope me-2 "></i>inteareable@vk.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center py-3 ">
+                <hr class="my-4 glass-divider ">
+                <p class="mb-0 text-muted ">&copy; 2025 InTeaReable. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js "></script>
+
+    <script>
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const address = this.dataset.address;
+            navigator.clipboard.writeText(address);
+            
+            const notification = document.getElementById('copyNotification');
+            notification.style.opacity = '1';
+            setTimeout(() => notification.style.opacity = '0', 2000);
+        });
+    });
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            const width = bar.getAttribute('data-width');
+            const fill = bar.querySelector('.progress-fill') || bar;
+            
+            const progressFill = document.createElement('div');
+            progressFill.className = 'progress-fill';
+            bar.appendChild(progressFill);
+            
+            requestAnimationFrame(() => {
+                progressFill.style.width = width;
+            });
+        });
+    });
+    </script>
+
+
+    <script>
+        class Dot {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                this.radius = Math.random() * 3;
+            }
+
+            update() {
+                if (this.x < 0 || this.x > this.canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > this.canvas.height) this.vy *= -1;
+                this.x += this.vx;
+                this.y += this.vy;
+            }
+
+            draw() {
+                this.ctx.beginPath();
+                this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                this.ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                this.ctx.fill();
+            }
+        }
+
+        class Background {
+            constructor() {
+                this.canvas = document.getElementById('dot-canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.dots = [];
+                this.maxConnections = 100;
+                
+                this.init();
+                this.animate();
+                window.addEventListener('resize', this.init.bind(this));
+            }
+
+            init() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+                this.dots = Array.from({ length: 150 }, () => new Dot(this.canvas));
+            }
+
+            animate() {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                for (let i = 0; i < this.dots.length; i++) {
+                    for (let j = i + 1; j < this.dots.length; j++) {
+                        const dx = this.dots[i].x - this.dots[j].x;
+                        const dy = this.dots[i].y - this.dots[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (dist < 100) {
+                            this.ctx.beginPath();
+                            this.ctx.strokeStyle = `rgba(255, 255, 255, ${1 - dist/100})`;
+                            this.ctx.lineWidth = 0.5;
+                            this.ctx.moveTo(this.dots[i].x, this.dots[i].y);
+                            this.ctx.lineTo(this.dots[j].x, this.dots[j].y);
+                            this.ctx.stroke();
+                        }
+                    }
+                }
+
+                this.dots.forEach(dot => {
+                    dot.update();
+                    dot.draw();
+                });
+
+                requestAnimationFrame(this.animate.bind(this));
+            }
+        }
+
+        new Background();
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
