@@ -157,7 +157,7 @@
 
                         <div class="skill-card mb-4">
                             <div class="skill-header">
-                                <img src="img/doggo_sleep.gif" alt="Собачка спит" class="doggo-gif fade-in">
+                                <img src="img/doggo_sleep.gif" alt="Собачка спит" class="doggo-gif fade-in clickable-dog"onclick="playzzzSound(this)">
                                 <i class="bi bi-map"></i>
                                 <h3>Левел-Дизайн</h3>
                                 <span class="skill-rating">4.8/5</span>
@@ -374,6 +374,29 @@
     fetchRates();
     </script>
 
+
+    <script>
+        const zzz = new Audio('sound/zzz.mp3');
+        zzz.preload = 'auto';
+
+        function playzzzSound(element) {
+            // Воспроизведение звука
+            zzz.currentTime = 0;
+            zzz.play().catch(e => console.log("Нужно взаимодействие пользователя"));
+            
+            // Анимация
+            element.classList.add('dog-animation');
+            setTimeout(() => {
+                element.classList.remove('dog-animation');
+            }, 400);
+            
+            // Дополнительный визуальный эффект
+            element.style.filter = 'hue-rotate(180deg)';
+            setTimeout(() => {
+                element.style.filter = '';
+            }, 300);
+        }
+    </script>
 
     <div class="copy-notification" id="copyNotification">
         <img src="img/doggo.gif" alt="Прост собачка" class="doggo-event">
