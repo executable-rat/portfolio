@@ -44,6 +44,9 @@ body {
 
 
 #canvas-container {
+    background: -webkit-linear-gradient(225deg, rgb(0, 0, 0), rgb(131, 197, 36) 100%);
+    background: -moz-linear-gradient(225deg, rgb(0, 0, 0), rgb(131, 197, 36) 100%);
+    background: linear-gradient(225deg, rgb(0, 0, 0), rgb(131 197 36 / 14%) 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +71,7 @@ body {
 
 
 .btn-custom {
-    background: var(--primary-color);
+    background: #1a270d;
     color: white;
     padding: 12px 28px;
     border-radius: 8px;
@@ -78,7 +81,7 @@ body {
 
 .btn-custom:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+    box-shadow: 0 4px 15px #1a270d;
 }
 
 .logo-text {
@@ -108,7 +111,7 @@ body {
     left: 50%;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #9D50BB, #6E48AA);
+    background: linear-gradient(225deg, rgb(37 71 43), rgb(131, 197, 36) 100%);
     transition: all 0.3s ease;
 }
 
@@ -183,12 +186,12 @@ body {
 }
 
 .footer-link:hover {
-    color: #BF55EC !important;
+    color: #69a032 !important;
     transform: translateX(5px);
 }
 
 .btn-purple {
-    background: linear-gradient(45deg, #8A2BE2, #6E48AA);
+    background: linear-gradient(45deg, #2be24454, #488aaa61);
     border: none;
     color: white !important;
     margin: 0 5px;
@@ -198,7 +201,7 @@ body {
 
 .btn-purple:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(154, 96, 212, 0.4);
+    box-shadow: 0 5px 15px #2be24454;
 }
 
 .glass-divider {
@@ -262,7 +265,7 @@ video:focus {
 }
 
 .tooltip-badge {
-    background: #433bbc;
+    background: #1d501f;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.9em;
@@ -322,7 +325,7 @@ video:focus {
 
 .progress-bar {
     height: 8px;
-    background: rgba(255,255,255,0.1);
+    background: rgb(0 0 0);
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -333,7 +336,7 @@ video:focus {
     left: 0;
     top: 0;
     height: 100%;
-    background: linear-gradient(90deg, #433bbc, #2219a6);
+    background: linear-gradient(270deg, rgb(49 160 86 / 57%), rgb(131, 197, 36) 100%);
     width: 0;
     transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
@@ -355,7 +358,7 @@ video:focus {
 .metric-value {
     font-size: 2em;
     font-weight: bold;
-    color: #433bbc;
+    color: #3fbc3b;
 }
 
 .skill-chips {
@@ -365,7 +368,7 @@ video:focus {
 }
 
 .chip {
-    background: rgb(60 45 139 / 15%);
+    background: rgb(45 139 49 / 15%);
     padding: 8px 14px;
     border-radius: 10px;
     display: flex;
@@ -374,7 +377,7 @@ video:focus {
 }
 
 .chip-icon {
-    background: #26225d;
+    background: #225d40;
     width: 60px;
     height: 24px;
     border-radius: 10px;
@@ -469,7 +472,6 @@ video:focus {
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, #6200ee, #4158ff);
     transition: width 1s ease-in-out;
 }
 
@@ -482,8 +484,8 @@ video:focus {
 
 /* КАРТОЧКИ */
 
-.bg-purple {
-    background: #6b46c1;
+.bg-green {
+    background: #1c6424;
 }
 
 .glass-card {
@@ -564,13 +566,13 @@ video:focus {
 }
 
 .donation-header {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
-    border-bottom: 2px solid #9575cd;
+    border-bottom: 2px solid #75cd7c;
 }
 
 .copy-btn {
-    background: #4a2b8a;
+    background: #2b8a45;
     border: none;
     width: 50px;
     height: 50px;
@@ -578,7 +580,7 @@ video:focus {
 }
 
 .copy-btn:hover {
-    background: #5e35b1;
+    background: #35b149;
     transform: scale(1.05);
 }
 
@@ -592,8 +594,8 @@ video:focus {
     transform: translateY(-3px);
 }
 
-.badge-purple {
-    background: #7e57c2;
+.badge-green {
+    background: #398241;
     font-size: 0.8em;
 }
 
