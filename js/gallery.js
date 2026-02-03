@@ -83,7 +83,6 @@ const galleryData = [
     }
 ];
 
-
 class Gallery {
     constructor() {
         this.modal = document.getElementById('galleryModal');
@@ -167,6 +166,7 @@ class Gallery {
         galleryData.forEach((item, index) => {
             const galleryItem = document.createElement('div');
             galleryItem.className = 'gallery-item';
+            galleryItem.dataset.type = item.type;
             galleryItem.style.opacity = '0';
             galleryItem.style.transform = 'translateY(20px)';
             
@@ -211,10 +211,11 @@ class Gallery {
                 });
             }, 100);
             
-            if (!this.isMobile) {
+            if (!this.isMobile && item.type === 'image') {
                 galleryItem.addEventListener('click', (e) => {
                     if (!e.target.classList.contains('gallery-caption-title') && 
-                        !e.target.classList.contains('gallery-caption-description')) {
+                        !e.target.classList.contains('gallery-caption-description') &&
+                        !e.target.closest('.gallery-info')) {
                         this.toggleFullscreen(galleryItem);
                     }
                 });
@@ -235,16 +236,6 @@ class Gallery {
             element.classList.add('fullscreen');
             document.body.style.overflow = 'hidden';
             document.documentElement.style.overflow = 'hidden';
-            
-            const closeBtn = document.createElement('div');
-            closeBtn.className = 'fullscreen-close';
-            closeBtn.innerHTML = '×';
-            closeBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                element.classList.remove('fullscreen');
-                document.body.style.overflow = 'auto';
-                document.documentElement.style.overflow = 'auto';
-            });
             
             anime({
                 targets: element,

@@ -189,13 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const notification = document.getElementById('copyNotification');
         if (notification) {
             notification.classList.add('show');
-            console.log('Уведомление показано (тест)');
             setTimeout(() => {
                 notification.classList.remove('show');
-                console.log('Уведомление скрыто (тест)');
             }, 2000);
         }
     }, 1000);
-    
-    console.log('Портфолио InTeaReable загружено! Адаптация для мобилок и планшетов активирована.');
 });

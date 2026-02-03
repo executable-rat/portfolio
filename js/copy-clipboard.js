@@ -39,8 +39,6 @@ function copyToClipboard(text) {
             });
         }, 2000);
     }).catch(err => {
-        console.error('Ошибка копирования: ', err);
-
         notification.innerHTML = '<i class="fas fa-times mr-2"></i> Ошибка копирования';
         notification.style.display = 'flex';
         

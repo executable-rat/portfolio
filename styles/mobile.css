@@ -665,3 +665,48 @@ body.force-scroll {
         transform: scale(1.15);
     }
 }
+
+.gallery-item[data-type="video"] {
+    cursor: default;
+}
+
+.gallery-item[data-type="video"]:hover {
+    transform: none !important;
+    border-color: #008800 !important;
+    box-shadow: none !important;
+}
+
+.gallery-item[data-type="video"] .gallery-media-container {
+    background: #000;
+    pointer-events: none;
+}
+
+.gallery-video {
+    background: #000 !important;
+    cursor: auto;
+    pointer-events: auto;
+}
+
+.gallery-video::-webkit-media-controls {
+    background: transparent;
+}
+
+.gallery-video::-webkit-media-controls-panel {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.gallery-video::-webkit-media-controls-play-button,
+.gallery-video::-webkit-media-controls-volume-slider,
+.gallery-video::-webkit-media-controls-timeline {
+    filter: none;
+}
+
+.gallery-video:focus {
+    outline: none;
+    border: none;
+}
+
+/* Дополнительно: убираем любой возможный зеленый фон */
+.gallery-item[data-type="video"] .gallery-info {
+    background: rgba(0, 30, 0, 0.9);
+}

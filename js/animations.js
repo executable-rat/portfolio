@@ -39,8 +39,6 @@ class UIEffects {
                     duration: 300,
                     easing: 'easeInOutQuad'
                 });
-                
-                console.log(`Переход на ${platform}`);
             });
         });
         
