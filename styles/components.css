@@ -1,0 +1,113 @@
+.box-content {
+    height: calc(100% - 40px);
+}
+
+@media (max-height: 920px) {
+    .main-card {
+        height: 800px;
+        width: 800px;
+        padding: 20px;
+    }
+    
+    .user-box {
+        height: 160px;
+    }
+    
+    .row-2, .projects-box {
+        height: 220px;
+    }
+    
+    .row-4 {
+        height: 140px;
+    }
+    
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-height: 820px) {
+    .main-card {
+        height: 700px;
+        width: 750px;
+        padding: 15px;
+    }
+    
+    .user-box {
+        height: 140px;
+        padding: 12px;
+    }
+    
+    .row-2, .projects-box {
+        height: 200px;
+    }
+    
+    .row-4 {
+        height: 130px;
+    }
+    
+    .box {
+        padding: 12px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .username {
+        font-size: 18px;
+    }
+    
+    .box-title {
+        font-size: 14px;
+    }
+    
+    .text, .user-bio, .skill-desc, .project-desc {
+        font-size: 11px;
+    }
+    
+    .contact-btn, .donate-btn {
+        font-size: 11px;
+        padding: 6px;
+    }
+}
+
+@media (max-height: 720px) {
+    .main-card {
+        height: 650px;
+        width: 700px;
+        padding: 10px;
+        gap: 12px;
+    }
+    
+    .user-box {
+        height: 120px;
+    }
+    
+    .row-2, .projects-box {
+        height: 180px;
+    }
+    
+    .row-4 {
+        height: 120px;
+    }
+    
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .username {
+        font-size: 16px;
+    }
+    
+    .user-title {
+        font-size: 12px;
+    }
+    
+    .box-title {
+        font-size: 13px;
+    }
+}

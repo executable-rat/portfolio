@@ -1,0 +1,131 @@
+.angled-range {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.angled-range::-webkit-slider-runnable-track {
+    background: #003300;
+    height: 4px;
+    border: 1px solid #008800;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+.angled-range::-moz-range-track {
+    background: #003300;
+    height: 4px;
+    border: 1px solid #008800;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+.angled-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #00ff00;
+    border: 1px solid #008800;
+    box-shadow: 0 0 3px rgba(0, 255, 0, 0.5);
+    transform: rotate(45deg);
+    margin-top: -4px;
+}
+
+.angled-range::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #00ff00;
+    border: 1px solid #008800;
+    box-shadow: 0 0 3px rgba(0, 255, 0, 0.5);
+    transform: rotate(45deg);
+    border-radius: 0;
+}
+
+.player-container * {
+    border-radius: 0 !important;
+}
+
+.player-btn {
+    background: rgba(0, 20, 0, 0.8);
+    border: 1px solid #008800;
+    color: #00ff00;
+    padding: 2px 8px;
+    font-size: 10px;
+    transition: all 0.3s;
+}
+
+.player-btn:hover {
+    background: rgba(0, 40, 0, 0.9);
+    border-color: #00ff00;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+.player-btn.active {
+    background: rgba(0, 60, 0, 0.9);
+    border-color: #00ff00;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes smooth-progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.progress-container {
+    position: relative;
+    height: 4px;
+    background: rgba(0, 30, 0, 0.5);
+    border: 1px solid #008800;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #008800, #00ff00);
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.album-cover {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #008800;
+    background: #001100;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.track-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.track-title {
+    color: #00ff00;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.track-artist {
+    color: #00aa00;
+    font-size: 9px;
+    line-height: 1.2;
+}
+
+.compact-player {
+    height: 70px;
+    padding: 6px 8px;
+}
